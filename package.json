@@ -21,7 +21,6 @@
     "faker": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^1.6.5",
-    "promisify": "0.0.3",
     "sequelize": "^5.15.1"
   },
   "devDependencies": {
