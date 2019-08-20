@@ -1,12 +1,14 @@
 const routes = require('express').Router()
-const {User} = require('./app/models')
+//const {User} = require('./app/models')
+const authMiddleware = require('./app/middleware/auth')
 const SessionController = require('./app/controllers/SessionController')
 
+routes.post('/sessions', SessionController.store);
 
-routes.get('/', (res,req)=>{
-    console.log('get chegou')
-    req.status(200).send()
+routes.use(authMiddleware)
+
+routes.get('/dashboard', (req,res)=>{
+    return res.status(200).send()
 })
-routes.post('/sessions', SessionController.store)
 
 module.exports = routes

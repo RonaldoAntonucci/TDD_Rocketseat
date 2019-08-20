@@ -17,7 +17,11 @@
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "factory-girl": "^5.0.4",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
     "mysql2": "^1.6.5",
+    "promisify": "0.0.3",
     "sequelize": "^5.15.1"
   },
   "devDependencies": {
